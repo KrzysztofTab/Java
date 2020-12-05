@@ -2,6 +2,7 @@ package Cwiczenia.controller;
 
 import Cwiczenia.data.Point;
 
+
 public class PointController {
     public void addX(Point p) {
         p.setX(p.getX()+1);

@@ -5,9 +5,10 @@ import Cwiczenia.data.Point;
 
 public class PointApplication {
     public static void main(String[] args) {
-        Point p1 = new Point(10, 20);
-        PointController pc = new PointController();
 
+        Point p1 = new Point(10, 20);
+
+        PointController pc = new PointController();
         System.out.println("Punkt: (" + p1.getX()+";"+p1.getY()+")");
         pc.addX(p1);
         System.out.println("Punkt addX: (" + p1.getX()+";"+p1.getY()+")");

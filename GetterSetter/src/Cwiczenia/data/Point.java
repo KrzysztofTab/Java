@@ -4,13 +4,15 @@ public class Point {
     private int X;
     private int Y;
 
+//    konstruktor bes parametrowy
     public Point(){
     }
+//    konstrukro z dwoma współrzednymi
     public Point(int x, int y){
         this.X=x;
         this.Y=y;
     }
-
+//    getter i settler
     public int getX() {
         return X;
     }
