@@ -4,16 +4,18 @@ public class Car {
     String model;
     String color;
 
+//    konstruktor1
     Car(int yearA, String brandA, String modelA, String colorA) {
-        year = yearA;
-        brand = brandA;
-        model = modelA;
-        color = colorA;
+//        wywołujemy konstruktor2, który ustawi nam rok, markę i model
+        this(yearA, brandA, modelA);
+//        i dodatkowo ustawiamy jeszcze kolor
+        this.color = colorA;
     }
+//    onstruktor2
     Car(int yearB, String brandB, String modelB){
-        year = yearB;
-        brand = brandB;
-        model = modelB;
+        this.year = yearB;
+        this.brand = brandB;
+        this.model = modelB;
 }
 
 }
