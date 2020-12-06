@@ -1,18 +1,18 @@
-public class TworzenieKlas {
-//    atrubity klasy
+import java.util.Objects;
+
+public class User {
     private String firstName;
     private String lastName;
 
-//      konstruktor klasy
-    public TworzenieKlas(String imie, String nazwisko) {
-        this.firstName = imie;
-        this.lastName = nazwisko;
-    }
-//      get = służa do wyswietelenia atrybutów przy atrybutach prywatnych
+   public User(String FirstName,String LastName){
+       this.firstName = FirstName;
+       this.lastName = LastName;
+   }
+//    alt+insert -tworzenie get i set
     public String getFirstName() {
         return firstName;
     }
-//     set = służa do zmiany atrybutów przy atrybutach prywatnych
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -24,5 +24,4 @@ public class TworzenieKlas {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 }
