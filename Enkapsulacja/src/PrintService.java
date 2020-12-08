@@ -1,5 +1,5 @@
 public class PrintService {
-    void primeSummaty(Client client, double orgialPrice, double discountPrice){
+    void primeSummary(Client client, double orgialPrice, double discountPrice){
 
         printWelcomeMessage(client);
         printPrices(orgialPrice, discountPrice);
