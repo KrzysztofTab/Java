@@ -1,0 +1,22 @@
+
+
+Napisz kalkulator dla liczb zmiennoprzecinkowych, który pozwala użytkownikowi kolejno na:
+
+wprowadzenie pierwszej liczby,
+wprowadzenie jednego z podstawowych działań matematycznych (plus, minus, podziel, pomnóż) - w postaci znaków +, -, /, *,
+wprowadzenie drugiej liczby.
+Po czym wyświetlony jest wynik odpowiedniego działania.
+
+W programie stwórz co najmniej dwie osobne klasy. W programie wykorzystaj instrukcję switch, nie możesz wykorzystywać
+ instrukcji if-else.
+
+
+Podpowiedź
+Zadanie można rozwiązać na wiele sposobów. Proponuję Ci podejście, w którym wczytywanie danych pozostawisz
+w głównej klasie programu i metodzie main, natomiast obliczenie wydzielisz do osobnej klasy i przykładowej metody
+o takiej sygnaturze:
+ - public double calculate(double a, double b, String operator){ ... }
+
+ Metoda przyjmuje liczby, na których ma wykonać operację oraz operator matematyczny,
+  a zwraca wynik odpowiedniej operacji. W metodzie tej możesz wykorzystać instrukcję switch
+   do sprawdzenia jakie działanie powinno zostać wykonane.
