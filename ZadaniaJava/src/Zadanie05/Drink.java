@@ -1,7 +1,7 @@
 package Zadanie05;
 
 public class Drink {
-//    klasa posiada pola będące innym typem obiektowym nazywamy w programowaniu obiektowym agregacją
+    //    klasa posiada pola będące innym typem obiektowym nazywamy w programowaniu obiektowym agregacją
 //     Zachodzi przy tym relacja "ma/posiada", czyli w naszym przypadku "drink ma 3 składniki"
     private Ingredient ingredient01;
     private Ingredient ingredient02;

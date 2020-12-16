@@ -8,7 +8,6 @@ public class NumPrinter {
             }
             System.out.println("Pierwsza pętla: " + i);
         }
-
         for (int i = 0; i < 10; i++) {
             if (i == 5) {
                 break;

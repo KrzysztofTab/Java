@@ -1,7 +1,7 @@
 package Zadanie05;
 
 public class Ingredient {
-//    Klasa Ingredient posiada dwa pola. Jedno typu String na nazwę składnika,
+    //    Klasa Ingredient posiada dwa pola. Jedno typu String na nazwę składnika,
 //    drugie typu double na ilość (w mililitrach).
     private String name;
     private double amount;
