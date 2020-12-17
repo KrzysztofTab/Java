@@ -38,4 +38,3 @@ public class Patient {
         this.pesel = pesel;
     }
 }
-
