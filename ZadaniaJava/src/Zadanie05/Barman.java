@@ -1,3 +1,6 @@
+//Zdefiniuj klasę Barman, która posiada metodę createDrink przyjmującą jako argumenty nazwy
+// oraz ilość 3 składników potrzebnych do przygotowania drinka.
+
 package Zadanie05;
 
 public class Barman {
