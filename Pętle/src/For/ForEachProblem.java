@@ -11,8 +11,8 @@ public class ForEachProblem {
             System.out.println("Podaj liczbę:");
             mumbers[i] = sc.nextInt();
         }
-        for (int i = 0; i < mumbers.length; i++) {
-            System.out.println(mumbers[i]);
+        for (int mumber : mumbers) {
+            System.out.print(" " + mumber);
         }
         sc.close();
     }
