@@ -14,6 +14,4 @@ public class Time {
         System.out.println("        = "+result +" milisek.");
     }
 }
-
-
 //    1 godzina to 60 minut, 1 minuta to 60 sekund, 1 sekunda to 1000 milisekund.

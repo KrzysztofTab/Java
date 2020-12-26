@@ -11,5 +11,4 @@ public class Length {
         System.out.println( "        = "+result +" mm.");
     }
 }
-
 //    1 metr to 100 centymetrów i 1000 milimetrów.

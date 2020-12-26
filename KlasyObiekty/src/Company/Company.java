@@ -1,3 +1,5 @@
+package Company;
+
 class Company {
     public static void main(String[] args) {
         Employee emplo01 = new Employee();

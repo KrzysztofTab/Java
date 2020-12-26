@@ -22,5 +22,3 @@ public class MeTimTest {
         System.out.println("\n"+t + " godz. =" + minutes+"min. ="+seconds+"sek. ="+millis + "milisek");
     }
 }
-
-

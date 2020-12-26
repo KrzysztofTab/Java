@@ -1,3 +1,5 @@
+package Car;
+
 class Car {
 
 //    clas jest szablonem porzebnym do zdefiniowania obiektu
