@@ -1,3 +1,7 @@
+package Printer;
+
+import Printer.NumberPrinter;
+
 public class PrinterTest {
     public static void main(String[] args) {
         NumberPrinter np = new NumberPrinter();

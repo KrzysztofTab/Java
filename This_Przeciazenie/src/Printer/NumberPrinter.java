@@ -1,3 +1,5 @@
+package Printer;
+
 public class NumberPrinter {
 
     void printNumber(int a) {

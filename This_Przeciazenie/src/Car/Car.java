@@ -1,3 +1,5 @@
+package Car;
+
 public class Car {
     int year;
     String brand;
@@ -11,7 +13,7 @@ public class Car {
 //        i dodatkowo ustawiamy jeszcze kolor
         this.color = colorA;
     }
-//    onstruktor2
+//    konstruktor2
     Car(int yearB, String brandB, String modelB){
         this.year = yearB;
         this.brand = brandB;
