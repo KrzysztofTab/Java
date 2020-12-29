@@ -1,4 +1,4 @@
-package Cwiczenie;
+package Training01;
 import java.util.Scanner;
 
 public class MyPointApplication {

@@ -1,4 +1,4 @@
-package Cwiczenie;
+package Training01;
 
 public class PointController {
 
