@@ -1,4 +1,4 @@
-package Example;
+package Example01;
 
 public class Company {
     public static void main(String[] args) {
