@@ -1,4 +1,4 @@
-package Cwiczenie;
+package Example01;
 
 public class Numbers {
     public double calculate(double a, double b, String operator) {

@@ -1,8 +1,6 @@
-package Cwiczenie;
+package Example01;
 import java.util.Locale;
 import java.util.Scanner;
-
-import Cwiczenie.Numbers;
 
 public class Calkulator {
 
