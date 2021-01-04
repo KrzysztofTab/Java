@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79f98467-e985-4843-9876-c2ea772379fd" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main' into main" />
+    <list default="true" id="f2278daa-3b34-4913-ac84-51e4f480259f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dziedziczenie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotoShop/ExhaustPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotoShop/MotoShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotoShop/Part.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotoShop/Tire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Bird.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Zoo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Boat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Engine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/TestVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/WheeledVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/ExhaustPart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/Part.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/ShopAuto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/Tire.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1mLBYTMXkzNkHXpI25I3qkGic8u" />
+  <component name="ProjectId" id="1mcJdLRA1NZWQBzLzlCfPWx1f9J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -25,71 +50,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Application.ShopAuto">
-    <configuration name="ShopAuto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Training.ShopAuto" />
+  <component name="RunManager">
+    <configuration name="MotoShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MotoShop.MotoShop" />
       <module name="Dziedziczenie" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestVehicle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DziedziczeniePol.TestVehicle" />
-      <module name="Dziedziczenie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DziedziczeniePol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Zoo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DziedziczenieMetodiKonstruktorów.Zoo" />
-      <module name="Dziedziczenie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DziedziczenieMetodiKonstruktorów.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShopAuto" />
-        <item itemvalue="Application.Zoo" />
-        <item itemvalue="Application.TestVehicle" />
+        <item itemvalue="Application.MotoShop" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="79f98467-e985-4843-9876-c2ea772379fd" name="Default Changelist" comment="" />
-      <created>1609263039423</created>
+      <changelist id="f2278daa-3b34-4913-ac84-51e4f480259f" name="Default Changelist" comment="" />
+      <created>1609787033382</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1609263039423</updated>
+      <updated>1609787033382</updated>
     </task>
-    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/main' into main">
-      <created>1609272818511</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609272818511</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,9 +89,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge remote-tracking branch 'origin/main' into main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main' into main" />
   </component>
 </project>
