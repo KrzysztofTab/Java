@@ -1,10 +1,11 @@
 package Projekt01.Libary.io;
 
 import Projekt01.Libary.model.Book;
+import Projekt01.Libary.model.Magazine;
 
 import java.util.Scanner;
 
-public class DataIn {
+public class DataReader {
     private final Scanner sc = new Scanner(System.in);
 
     public void close() {
@@ -36,4 +37,21 @@ public class DataIn {
 
         return new Book(title, author, releaseDate, pages, publisher, isbn);
     }
+    public Magazine readAndCreateMagazine() {
+        System.out.println("Tytuł: ");
+        String title = sc.nextLine();
+        System.out.println("Wydawnictwo: ");
+        String publisher = sc.nextLine();
+        System.out.println("Język: ");
+        String language = sc.nextLine();
+        System.out.println("Rok wydania: ");
+        int year = getInt();
+        System.out.println("Miesiąc: ");
+        int month = getInt();
+        System.out.println("Dzień: ");
+        int day = getInt();
+
+        return new Magazine(title, publisher, year, month, day, language);
+    }
+
 }
