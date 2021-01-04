@@ -1,7 +1,5 @@
 package MotoShop;
 
-import MotoShop.Part;
-
 public class Tire extends Part {
     private int size;
     private double width;

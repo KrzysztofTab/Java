@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2278daa-3b34-4913-ac84-51e4f480259f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dziedziczenie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MotoShop/ExhaustPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MotoShop/MotoShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MotoShop/Part.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MotoShop/Tire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="f2278daa-3b34-4913-ac84-51e4f480259f" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main' into main">
+      <change afterPath="$PROJECT_DIR$/src/JavaStart/BootcampOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStart/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStart/OfflineCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStart/OnlineCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStart/TestCourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Bird.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczenieMetodiKonstruktorów/Zoo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Boat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Engine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/TestVehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/DziedziczeniePol/WheeledVehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/ExhaustPart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/Part.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/ShopAuto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Training/Tire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/ExhaustPart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/MotoShop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Part.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dziedziczenie/Tire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotoShop/MotoShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotoShop/MotoShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotoShop/Tire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotoShop/Tire.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestCourse">
     <configuration name="MotoShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MotoShop.MotoShop" />
       <module name="Dziedziczenie" />
@@ -62,8 +50,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCourse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaStart.TestCourse" />
+      <module name="Dziedziczenie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaStart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCourse" />
         <item itemvalue="Application.MotoShop" />
       </list>
     </recent_temporary>
@@ -77,6 +79,21 @@
       <option name="presentableId" value="Default" />
       <updated>1609787033382</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/main' into main">
+      <created>1609787564971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609787564971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/main' into main">
+      <created>1609787581960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609787581960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/main' into main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main' into main" />
   </component>
 </project>
