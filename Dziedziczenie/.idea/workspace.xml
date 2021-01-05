@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2278daa-3b34-4913-ac84-51e4f480259f" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main' into main" />
+    <list default="true" id="f2278daa-3b34-4913-ac84-51e4f480259f" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main' into main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/PoczatkoweProgramiki.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/BasicTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/DaneOsobowe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/DataTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/MathOperators2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/OperNaZmiennych.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/ShorthandOperators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/Simple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/out/production/Projekt01/Zmienne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/BasicTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/CompareOperators.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/DaneOsobowe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/DataTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/MathOperators2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/OperNaZmiennych.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/ShorthandOperators.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/Simple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekt01/src/Zmienne.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projekty" />
   </component>
   <component name="RunManager" selected="Application.TestCourse">
     <configuration name="MotoShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -94,7 +124,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main' into main" />
