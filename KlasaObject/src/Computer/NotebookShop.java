@@ -1,3 +1,5 @@
+package Computer;
+
 public class NotebookShop {
     public static void main(String[] args) {
         DataStore dataStore = new DataStore();

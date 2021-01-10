@@ -1,3 +1,5 @@
+package Computer;
+
 import java.util.Objects;
 
 public class Computer {
@@ -27,7 +29,7 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Computer  {" + " producer= '" + producer + '\'' + ", model= " + model + '}';
+        return "Computer.Computer  {" + " producer= '" + producer + '\'' + ", model= " + model + '}';
     }
 
     @Override
