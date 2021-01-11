@@ -1,8 +1,8 @@
 package JavaStart;
 
 public class OnlineCourse extends Course{
-    private int videoLength;
-    private int timeToFinish;
+    private final int videoLength;
+    private final int timeToFinish;
 
     public OnlineCourse(String id, String title, String description, double price, int videoLength, int timeToFinish) {
         super(id, title, description, price);
