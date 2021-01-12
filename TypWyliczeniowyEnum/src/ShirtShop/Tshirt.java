@@ -1,3 +1,5 @@
+package ShirtShop;
+
 public class Tshirt {
     private Size size;
 

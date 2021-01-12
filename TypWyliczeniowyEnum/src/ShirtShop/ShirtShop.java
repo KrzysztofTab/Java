@@ -1,3 +1,5 @@
+package ShirtShop;
+
 import java.util.Scanner;
 
 public class ShirtShop {
@@ -18,7 +20,7 @@ public class ShirtShop {
         Size shirtSize = Size.valueOf(siz);
         tshirt.setSize(shirtSize);
         System.out.println(tshirt.getSize());
-        System.out.println("Rozmiar Tshirt: " + tshirt.getSize().getDescription());
+        System.out.println("Rozmiar ShirtShop.Tshirt: " + tshirt.getSize().getDescription());
 
         System.out.println(tshirt.toString());
         System.out.println("metoda: name()");

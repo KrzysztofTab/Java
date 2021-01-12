@@ -1,5 +1,7 @@
+package ShirtShop;
+
 public enum Size {
-//    Nasz typ wyliczeniowy ma nazwę Size i ma zdefiniowane trzy wartości - SMALL, MEDIUM, LARGE
+//    Nasz typ wyliczeniowy ma nazwę ShirtShop.Size i ma zdefiniowane trzy wartości - SMALL, MEDIUM, LARGE
 //    ( możemy przypisac tylko jedną wartość ),
 //    które wymieniamy po przecinku. Zgodnie z konwencją nazewnictwa traktujemy te wartości analogicznie
 //    jak stałe klasy i zapisujemy WIELKIMI literami.
