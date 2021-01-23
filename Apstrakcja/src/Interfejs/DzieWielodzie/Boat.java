@@ -1,7 +1,7 @@
 package Interfejs.DzieWielodzie;
 
 interface Boat {
-    default public void printName() {
+    default void printName() {
         System.out.print("Boat");
     }
 }
