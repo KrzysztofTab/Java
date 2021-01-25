@@ -12,7 +12,7 @@ import java.util.InputMismatchException;
 
 public class LibraryControl {
     //      drukowanie wszytskich printów
-    private ConsolePrinter printer = new ConsolePrinter();
+    private final ConsolePrinter printer = new ConsolePrinter();
 
     //    zmienna do komunikacji z użytkownikiem
     private final DataReader dataReader = new DataReader(printer);
@@ -35,6 +35,44 @@ public class LibraryControl {
                 default -> printer.printLine("Nie ma takiej opcji, wprowadź ponownie:");
             }
         } while (option != Option.EXIT);
+    }
+
+    private enum Option {
+        EXIT(0, "Wyjście z programu"),
+        ADD_BOOK(1, "Dodanie książki"),
+        ADD_MAGAZINE(2, "Dodanie magazynu/gazety"),
+        PRINT_BOOKS(3, "Wyświetlenie dostępnych książek"),
+        PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów / gazet");
+
+        private final int value;
+        private final String desciption;
+
+        Option(int value, String desc) {
+            this.value = value;
+            this.desciption = desc;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public String getDesciption() {
+            return desciption;
+        }
+
+        @Override
+        public String toString() {
+            return value + " " + desciption;
+        }
+
+        //    createFromInt(int option), która pozwala przekształcić wartość typu int na odpowiednią wartość typu Option
+        static Option createFromInt(int option) throws NoSuchOptionException {
+            try {
+                return Option.values()[option];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                throw new NoSuchOptionException("Brak opcji o id " + option);
+            }
+        }
     }
 
     private Option getOption() {

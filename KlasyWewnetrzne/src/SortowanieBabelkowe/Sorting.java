@@ -15,6 +15,8 @@ public class Sorting {
                     for (int j = 1; j < array.length - i; j++) {
 //                        tablica = 9 , 7
 //                        porównaj miejsce '0' = 9 > do miejsca '1'= 7
+//                        Jeżeli chcesz zmienić kolejność sortowania elementów z rosnącego na malejący,
+//                        wystarczy, że zmienisz warunek w if z ">" na "<".
                         if (array[j - 1] > array[j]) {
 //                            do 'temp'  przypisz miejsce '1'=7
                             int temp = array[j];
