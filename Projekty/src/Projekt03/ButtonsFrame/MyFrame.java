@@ -1,4 +1,4 @@
-package FirstFrame;
+package Projekt03.ButtonsFrame;
 
 import javax.swing.*;
 import java.awt.*;

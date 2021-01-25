@@ -1,4 +1,4 @@
-package ButtonFrame;
+package Projekt03.ButtonsColor;
 
 import javax.swing.*;
 import java.awt.*;
