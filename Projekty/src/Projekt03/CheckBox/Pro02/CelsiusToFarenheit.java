@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 public class CelsiusToFarenheit extends JFrame implements ActionListener {
     JTextField textCelsius, textFahrenheit;
     JButton buttonConvert;
-    JCheckBox checkBoxBigLeters;
     JLabel labelCelsius, labelFahrenheit;
     ButtonGroup buttonGroupSize;
     JRadioButton radioButtonSmall, radioButtonMedium, radioButtonBig;
@@ -40,13 +39,13 @@ public class CelsiusToFarenheit extends JFrame implements ActionListener {
         buttonConvert.addActionListener(this);
 
         buttonGroupSize = new ButtonGroup();
-        radioButtonSmall = new JRadioButton("Mały", false);
+        radioButtonSmall = new JRadioButton("Mały", true);
         radioButtonSmall.setBounds(20, 150, 60, 20);
         buttonGroupSize.add(radioButtonSmall);
         add(radioButtonSmall);
         radioButtonSmall.addActionListener(this);
 
-        radioButtonMedium = new JRadioButton("Średni", true);
+        radioButtonMedium = new JRadioButton("Średni", false);
         radioButtonMedium.setBounds(90, 150, 80, 20);
         buttonGroupSize.add(radioButtonMedium);
         add(radioButtonMedium);
@@ -77,3 +76,5 @@ public class CelsiusToFarenheit extends JFrame implements ActionListener {
         }
     }
 }
+
+

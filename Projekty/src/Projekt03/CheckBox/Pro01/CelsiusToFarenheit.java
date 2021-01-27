@@ -41,24 +41,23 @@ public class CelsiusToFarenheit extends JFrame implements ActionListener {
         checkBoxBigLeters = new JCheckBox("Wielkie litery");
         checkBoxBigLeters.setBounds(150, 100, 150, 20);
         add(checkBoxBigLeters);
-        checkBoxBigLeters.addActionListener(this);
+//        checkBoxBigLeters.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         Object orgin = e.getSource();
         if (orgin == buttonConvert || orgin == textCelsius) {
-//        pobieramy z pola teksu doubule i zmieniamy na String
-            double tempCelsius = Double.parseDouble(textCelsius.getText());
-            double tempFahrenheit = 32.0 + ((9.0 / 5.0) * tempCelsius);
-//        wyswietlamy stopnie po przekształceniu z double na Stringa
-            textFahrenheit.setText(String.valueOf(tempFahrenheit));
-        } else if (orgin == checkBoxBigLeters) {
             if (checkBoxBigLeters.isSelected()) {
                 textFahrenheit.setFont(new Font("SansSerif", Font.BOLD, 18));
             } else {
                 textFahrenheit.setFont(new Font("SansSerif", Font.PLAIN, 12));
             }
+//        pobieramy z pola teksu doubule i zmieniamy na String
+            double tempCelsius = Double.parseDouble(textCelsius.getText());
+            double tempFahrenheit = 32.0 + ((9.0 / 5.0) * tempCelsius);
+//        wyswietlamy stopnie po przekształceniu z double na Stringa
+            textFahrenheit.setText(String.valueOf(tempFahrenheit));
         }
     }
 }
