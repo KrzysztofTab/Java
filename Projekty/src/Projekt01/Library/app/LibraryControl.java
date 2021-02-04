@@ -1,8 +1,12 @@
 package Projekt01.Library.app;
 
+import Projekt01.Library.exception.DataExportException;
+import Projekt01.Library.exception.DataImportException;
 import Projekt01.Library.exception.NoSuchOptionException;
 import Projekt01.Library.io.ConsolePrinter;
 import Projekt01.Library.io.DataReader;
+import Projekt01.Library.io.file.FileManager;
+import Projekt01.Library.io.file.FileManagerBuilder;
 import Projekt01.Library.model.Book;
 import Projekt01.Library.model.Library;
 import Projekt01.Library.model.Magazine;
@@ -13,12 +17,23 @@ import java.util.InputMismatchException;
 public class LibraryControl {
     //      drukowanie wszytskich printów
     private final ConsolePrinter printer = new ConsolePrinter();
-
     //    zmienna do komunikacji z użytkownikiem
     private final DataReader dataReader = new DataReader(printer);
-
     //    "biblioteka" przechowująca dane
-    private final Library library = new Library();
+    private FileManager fileManager;
+    private Library library;
+
+    LibraryControl() {
+        fileManager = new FileManagerBuilder(printer, dataReader).bulid();
+        try {
+            library = fileManager.importData();
+            printer.printLine("Zaimportowane dane z pliku");
+        } catch (DataImportException e) {
+            printer.printLine(e.getMessage());
+            printer.printLine("Zainicjowano nową bazę.");
+            library = new Library();
+        }
+    }
 
     //    Główna metoda programu, która pozwala na wybór opcji i interakcję
     public void controlLoop() {
@@ -132,9 +147,14 @@ public class LibraryControl {
     }
 
     private void exit() {
-        printer.printLine("Koniec programu!");
-        // zamykamy strumień wejścia
+        try {
+            fileManager.exportData(library);
+            printer.printLine("Export danych do pliku zakończony powodzeniem");
+        } catch (DataExportException e) {
+            printer.printLine(e.getMessage());
+        }
         dataReader.close();
+        printer.printLine("Koniec programu!");
     }
 
 }

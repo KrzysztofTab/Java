@@ -14,6 +14,9 @@ public class DataReader {
     public void close() {
         sc.close();
     }
+    public String getString() {
+        return sc.nextLine();
+    }
 
     public int getInt() {
         try {
