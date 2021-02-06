@@ -27,7 +27,7 @@ public class LibraryControl {
         fileManager = new FileManagerBuilder(printer, dataReader).bulid();
         try {
             library = fileManager.importData();
-            printer.printLine("Zaimportowane dane z pliku");
+            printer.printLine("\nZaimportowane dane z pliku\n");
         } catch (DataImportException e) {
             printer.printLine(e.getMessage());
             printer.printLine("Zainicjowano nową bazę.");
@@ -108,7 +108,7 @@ public class LibraryControl {
     }
 
     private void printOptions() {
-        printer.printLine("Wybierz opcję: ");
+        System.err.println("\nWybierz opcję: ");
         for (Option option : Option.values()) {
             printer.printLine(option.toString());
         }
@@ -154,8 +154,15 @@ public class LibraryControl {
             printer.printLine(e.getMessage());
         }
         dataReader.close();
-        printer.printLine("Koniec programu!");
+        System.err.println("\nKoniec programu!");
     }
 
+    static Option createFromInt(int option) throws NoSuchOptionException {
+        try {
+            return Option.values()[option];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            throw new NoSuchOptionException("Brak opcji o id " + option);
+        }
+    }
 }
 

@@ -38,10 +38,13 @@ public abstract class Publication implements Serializable {
         this.publisher = publisher;
     }
 
+    //    metoda abstrkcyjna
+    public abstract String toCsv();
+
     @Override
     public String toString() {
         return "title= " + title + ", publisher= " + publisher + ", year= " + year;
-            }
+    }
 
     @Override
     public boolean equals(Object o) {

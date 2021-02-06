@@ -16,10 +16,11 @@ public class FileManagerBuilder {
     }
 
     public FileManager bulid() {
-        printer.printLine("Wybierz format danych");
+        System.err.println("Wybierz format danych");
         FileType fileType = getFileType();
         return switch (fileType) {
             case SERIAL -> new SerializableFileManager();
+            case CSV -> new CsvFileManager();
             default -> throw new NoSuchFileTypeException("Nieobsługiwany typ danych");
         };
     }
