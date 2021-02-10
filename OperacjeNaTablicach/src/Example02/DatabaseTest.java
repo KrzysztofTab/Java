@@ -1,4 +1,4 @@
-package Example;
+package Example02;
 
 public class DatabaseTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Example;
+package Example02;
 import java.util.Arrays;
 public class Exa {
 

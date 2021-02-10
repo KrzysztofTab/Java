@@ -46,6 +46,8 @@ public class LibraryControl {
                 case ADD_MAGAZINE -> addMagazine();
                 case PRINT_BOOKS -> printBooks();
                 case PRINT_MAGAZINES -> printMagazines();
+                case DELETE_BOOK -> deleteBook();
+                case DELETE_MAGAZINE -> deleteMagazine();
                 case EXIT -> exit();
                 default -> printer.printLine("Nie ma takiej opcji, wprowadź ponownie:");
             }
@@ -57,7 +59,11 @@ public class LibraryControl {
         ADD_BOOK(1, "Dodanie książki"),
         ADD_MAGAZINE(2, "Dodanie magazynu/gazety"),
         PRINT_BOOKS(3, "Wyświetlenie dostępnych książek"),
-        PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów / gazet");
+        PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów / gazet"),
+        DELETE_BOOK(5, "Usuń książkę"),
+        DELETE_MAGAZINE(6, "Usuń magazyn");
+
+
 
         private final int value;
         private final String desciption;
@@ -125,6 +131,18 @@ public class LibraryControl {
         }
     }
 
+    private void deleteBook() {
+        try {
+            Book book = dataReader.readAndCreateBook();
+            if (library.removePublication(book))
+                printer.printLine("Usunięto książkę.");
+            else
+                printer.printLine("Brak wskazanej książki.");
+        } catch (InputMismatchException e) {
+            printer.printLine("Nie udało się utworzyć książki, niepoprawne dane");
+        }
+    }
+
     private void printBooks() {
         Publication[] publications = library.getPublications();
         printer.printBooks(publications);
@@ -138,6 +156,17 @@ public class LibraryControl {
             printer.printLine("Nie udało się utworzyć magazynu, niepoprawne dane");
         } catch (ArrayIndexOutOfBoundsException e) {
             printer.printLine("Osiągnięto limit pojemności, nie można dodać kolejnego magazynu");
+        }
+    }
+    private void deleteMagazine() {
+        try {
+            Magazine magazine = dataReader.readAndCreateMagazine();
+            if (library.removePublication(magazine))
+                printer.printLine("Usunięto magazyn.");
+            else
+                printer.printLine("Brak wskazanego magazynu.");
+        } catch (InputMismatchException e) {
+            printer.printLine("Nie udało się utworzyć magazynu, niepoprawne dane");
         }
     }
 
