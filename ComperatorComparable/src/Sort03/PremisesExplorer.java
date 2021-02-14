@@ -1,35 +1,32 @@
-package InterfejsSerializable.P06;
+package Sort03;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.io.File;
 
-public class ClientDataReader {
-    static Client[] readFile(String fileName) throws FileNotFoundException {
+public class PremisesExplorer {
+    static Premises[] readFile(String fileName) throws FileNotFoundException {
         final int linesNumber = countLinesWithoutHeader(fileName);
 //        okreslanie wielkosc tablicy "linesNumber"
-        Client[] clients = new Client[linesNumber];
+        Premises[] premises = new Premises[linesNumber];
         try (Scanner scanner = new Scanner(new File(fileName))) {
-            scanner.nextLine(); //pomijamy nagłówek
+//            scanner.nextLine(); //pomijamy nagłówek
             for (int i = 0; i < linesNumber; i++) {
                 String csvLine = scanner.nextLine();
-                clients[i] = createClientFromCsv(csvLine);
+                premises[i] = createPremisesFromCsv(csvLine);
             }
         }
-        return clients;
+        return premises;
     }
 
-    private static Client createClientFromCsv(String csvLine) {
+    private static Premises createPremisesFromCsv(String csvLine) {
 //        odczytaj dane z lini odzielone przcinkami (csvLine.split(","))
-        String[] data = csvLine.split(",");
-//        zamien stringa na int - to jest identyfikator  - 'Integer.parseInt '
-        int id = Integer.parseInt(data[0]);
-        String firstName = data[1];
-        String lastName = data[2];
-        String country = data[3];
+        String[] data = csvLine.split(";");
+        String city = data[0];
 //        zamieniamy liczbę zmiennoe przecinkowa na double 'Double.parseDouble'
-        double value = Double.parseDouble(data[4]);
-        return new Client(id, firstName, lastName, country, value);
+        double area = Integer.parseInt(data[1]);
+        double price = Integer.parseInt(data[2]);
+        return new Premises(city, area, price);
     }
 
     //  metoda zliczanie liczby wierszy bez nagłówka
