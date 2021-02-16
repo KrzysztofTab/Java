@@ -11,7 +11,9 @@ import Projekt01.Library.model.Book;
 import Projekt01.Library.model.Library;
 import Projekt01.Library.model.Magazine;
 import Projekt01.Library.model.Publication;
+import Projekt01.Library.model.comparator.AlphabeticalTitleComparator;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
@@ -144,7 +146,7 @@ public class LibraryControl {
     }
 
     private void printBooks() {
-        Publication[] publications = library.getPublications();
+        Publication[] publications = getSortedPublications();
         printer.printBooks(publications);
     }
 
@@ -171,7 +173,7 @@ public class LibraryControl {
     }
 
     private void printMagazines() {
-        Publication[] publications = library.getPublications();
+        Publication[] publications = getSortedPublications();
         printer.printMagazines(publications);
     }
 
@@ -192,6 +194,11 @@ public class LibraryControl {
         } catch (ArrayIndexOutOfBoundsException e) {
             throw new NoSuchOptionException("Brak opcji o id " + option);
         }
+    }
+    private Publication[] getSortedPublications() {
+        Publication[] publications = library.getPublications();
+        Arrays.sort(publications, new AlphabeticalTitleComparator());
+        return publications;
     }
 }
 
