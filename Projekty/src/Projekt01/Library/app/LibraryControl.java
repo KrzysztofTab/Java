@@ -3,17 +3,12 @@ package Projekt01.Library.app;
 import Projekt01.Library.exception.DataExportException;
 import Projekt01.Library.exception.DataImportException;
 import Projekt01.Library.exception.NoSuchOptionException;
+import Projekt01.Library.exception.UserAlreadyExistsException;
 import Projekt01.Library.io.ConsolePrinter;
 import Projekt01.Library.io.DataReader;
 import Projekt01.Library.io.file.FileManager;
 import Projekt01.Library.io.file.FileManagerBuilder;
-import Projekt01.Library.model.Book;
-import Projekt01.Library.model.Library;
-import Projekt01.Library.model.Magazine;
-import Projekt01.Library.model.Publication;
-import Projekt01.Library.model.comparator.AlphabeticalTitleComparator;
-
-import java.util.Arrays;
+import Projekt01.Library.model.*;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
@@ -50,6 +45,8 @@ public class LibraryControl {
                 case PRINT_MAGAZINES -> printMagazines();
                 case DELETE_BOOK -> deleteBook();
                 case DELETE_MAGAZINE -> deleteMagazine();
+                case ADD_USER -> addUser();
+                case PRINT_USERS -> printUsers();
                 case EXIT -> exit();
                 default -> printer.printLine("Nie ma takiej opcji, wprowadź ponownie:");
             }
@@ -63,8 +60,9 @@ public class LibraryControl {
         PRINT_BOOKS(3, "Wyświetlenie dostępnych książek"),
         PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów / gazet"),
         DELETE_BOOK(5, "Usuń książkę"),
-        DELETE_MAGAZINE(6, "Usuń magazyn");
-
+        DELETE_MAGAZINE(6, "Usuń magazyn"),
+        ADD_USER(7,"Dodaj czytelnika"),
+        PRINT_USERS(8,"Wyświetl czytelnika");
 
 
         private final int value;
@@ -85,7 +83,7 @@ public class LibraryControl {
 
         @Override
         public String toString() {
-            return value + " " + desciption;
+            return value + " - " + desciption;
         }
 
         //    createFromInt(int option), która pozwala przekształcić wartość typu int na odpowiednią wartość typu Option
@@ -116,7 +114,7 @@ public class LibraryControl {
     }
 
     private void printOptions() {
-        System.err.println("\nWybierz opcję: ");
+        printer.printLine("\nWybierz opcję: ");
         for (Option option : Option.values()) {
             printer.printLine(option.toString());
         }
@@ -146,8 +144,7 @@ public class LibraryControl {
     }
 
     private void printBooks() {
-        Publication[] publications = getSortedPublications();
-        printer.printBooks(publications);
+        printer.printBooks(library.getPublications().values());
     }
 
     private void addMagazine() {
@@ -160,6 +157,7 @@ public class LibraryControl {
             printer.printLine("Osiągnięto limit pojemności, nie można dodać kolejnego magazynu");
         }
     }
+
     private void deleteMagazine() {
         try {
             Magazine magazine = dataReader.readAndCreateMagazine();
@@ -173,8 +171,20 @@ public class LibraryControl {
     }
 
     private void printMagazines() {
-        Publication[] publications = getSortedPublications();
-        printer.printMagazines(publications);
+        printer.printMagazines(library.getPublications().values());
+    }
+
+    private void addUser() {
+        LibraryUser libraryUser = dataReader.createLibraryUser();
+        try {
+            library.addUser(libraryUser);
+        } catch (UserAlreadyExistsException e) {
+            printer.printLine(e.getMessage());
+        }
+    }
+
+    private void printUsers() {
+        printer.printUsers(library.getUsers().values());
     }
 
     private void exit() {
@@ -188,17 +198,5 @@ public class LibraryControl {
         System.err.println("\nKoniec programu!");
     }
 
-    static Option createFromInt(int option) throws NoSuchOptionException {
-        try {
-            return Option.values()[option];
-        } catch (ArrayIndexOutOfBoundsException e) {
-            throw new NoSuchOptionException("Brak opcji o id " + option);
-        }
-    }
-    private Publication[] getSortedPublications() {
-        Publication[] publications = library.getPublications();
-        Arrays.sort(publications, new AlphabeticalTitleComparator());
-        return publications;
-    }
 }
 
