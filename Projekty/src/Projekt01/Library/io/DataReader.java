@@ -69,6 +69,4 @@ public class DataReader {
         String pesel = sc.nextLine();
         return new LibraryUser(firstName, lastName, pesel);
     }
-
-
 }

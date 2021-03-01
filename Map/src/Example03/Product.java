@@ -1,8 +1,9 @@
-package Example02;
+package Example03;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Product implements Comparable<Product>{
+public  class Product implements Comparable<Product>, Serializable {
     private String name;
     private double price;
 
@@ -29,26 +30,25 @@ public class Product implements Comparable<Product>{
 
     @Override
     public String toString() {
-        return name + ", " + price + "zł";
+        return name + " : " + price + "zł";
+    }
+
+    @Override
+    public int compareTo(Product p) {
+        return Double.compare(this.price, p.price);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Product)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return Double.compare(product.getPrice(), getPrice()) == 0 &&
-                Objects.equals(getName(), product.getName());
+        return Double.compare(product.price, price) == 0 &&
+                Objects.equals(name, product.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getPrice());
-    }
-
-//    prównanie ceny produktów
-    @Override
-    public int compareTo(Product p) {
-        return Double.compare(this.price, p.price);
+        return Objects.hash(name, price);
     }
 }

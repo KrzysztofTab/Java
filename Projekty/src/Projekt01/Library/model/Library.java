@@ -4,7 +4,6 @@ import Projekt01.Library.exception.PublicationAlreadyExistsException;
 import Projekt01.Library.exception.UserAlreadyExistsException;
 
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
