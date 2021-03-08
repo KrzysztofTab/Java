@@ -3,7 +3,7 @@ package Example03;
 import java.io.Serializable;
 import java.util.Objects;
 
-public  class Product implements Comparable<Product>, Serializable {
+public  class Product implements Comparable<Product> {
     private String name;
     private double price;
 

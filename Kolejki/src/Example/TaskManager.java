@@ -1,12 +1,15 @@
 package Example;
 
-import java.util.InputMismatchException;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Scanner;
+import Example.tools.DataExportException;
+import Example.tools.NoSuchOptionException;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
 
 public class TaskManager {
-
+    private static final String FILE_NAME = "Zadania.csv";
     private final Queue<Task> taskQueue = new PriorityQueue<>(); // kolejka zadań "Queue" - "PriorityQueue" prorytet kolejki
     private final Scanner sc = new Scanner(System.in);
 
@@ -15,16 +18,34 @@ public class TaskManager {
         do {
             printOptions();
             option = getOption();
+            System.out.println(" ");
             switch (option) {
                 case ADD -> {
                     taskQueue.offer(readAndCreateTask());
                     System.out.println("Zadanie dodane do kolejki");
                 }
                 case TAKE -> takeTask();
-                case EXIT -> System.out.println("Koniec!");
+                case PRINT -> printTask();
+                case EXIT -> exit();
                 default -> System.out.println("Nie ma takiej obcji!");
             }
+            System.out.println(" ");
         } while (option != Option.EXIT);
+    }
+
+    private void printTask() {
+        if (taskQueue.isEmpty()) {
+            System.out.println("Brak zadań do wyświetlenia");
+        } else {
+            for (Task task : taskQueue) {
+                System.out.println(task);
+//                to samo co powyżej  "iterator"
+//              Iterator<Task> taskIterator = taskQueue.iterator();
+//              while (taskIterator.hasNext()) {
+//              Task task = taskIterator.next();
+//              System.out.println(task);
+            }
+        }
     }
 
     private Option getOption() {
@@ -37,7 +58,7 @@ public class TaskManager {
                 optionOk = true;
             } catch (InputMismatchException ignored) {
                 System.out.println("Wprowadzono wartość, która nie jest liczbą: ");
-            }catch (NoSuchOptionException e ){
+            } catch (NoSuchOptionException e) {
                 System.out.println(e.getMessage() + ", wybierz:");
             } finally {
                 sc.nextLine();
@@ -77,10 +98,36 @@ public class TaskManager {
         }
     }
 
+
+      public void exit() {
+       Queue<Task> taskQueue = new PriorityQueue<>();
+        try (FileWriter fileWriter = new FileWriter(FILE_NAME);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+            for (Task writeTask : taskQueue) {
+                bufferedWriter.write(writeTask.toCsv());
+                bufferedWriter.newLine();
+            }
+        } catch (IOException e) {
+            throw new DataExportException("Błąd zapisu danych do pliku " + FILE_NAME);
+        }
+    }
+
+//        private void exit() {
+//        try {
+//            exportData((Task) taskQueue);
+//            System.out.println("Export danych do pliku zakończony powodzeniem");
+//        } catch (DataExportException e) {
+//            System.out.println(e.getMessage());
+//        }
+//        System.err.println("\nKoniec programu!");
+//    }
+
+
     private enum Option {
         ADD(0, "Dodaj zadanie"),
         TAKE(1, "Zrób kolejne zadanie"),
-        EXIT(2, "Wyjdź");
+        PRINT(2, "Wyświetl wszystkie zadania"),
+        EXIT(3, "Wyjdź");
 
         int option;
         String description;
@@ -94,7 +141,7 @@ public class TaskManager {
             try {
                 return values()[option];
             } catch (ArrayIndexOutOfBoundsException e) {
-                throw new  NoSuchOptionException("Brak takiej opcji " + option);
+                throw new NoSuchOptionException("Brak takiej opcji " + option);
             }
         }
 
@@ -104,3 +151,4 @@ public class TaskManager {
         }
     }
 }
+

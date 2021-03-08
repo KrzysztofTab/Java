@@ -1,6 +1,10 @@
 package Example;
 
-public class Task implements Comparable<Task>{
+import Example.tools.CsvConvertible;
+
+import java.io.Serializable;
+
+public class Task implements Comparable<Task>, CsvConvertible, Serializable {
     private String name;
     private String discription;
     private Priority priority;   // wewnętrznego typu enum o nazwie Priority
@@ -38,6 +42,10 @@ public class Task implements Comparable<Task>{
     @Override
     public String toString() {
         return name + " - " + discription;
+    }
+    @Override
+    public String toCsv() {
+        return (name+ ";"+discription+";"+priority);
     }
 
     @Override
