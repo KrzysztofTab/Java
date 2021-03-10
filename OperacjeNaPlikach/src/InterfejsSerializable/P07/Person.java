@@ -3,28 +3,26 @@ package InterfejsSerializable.P07;
 import java.util.Objects;
 
 public class Person {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
+    private final int pesel;
 
-    public Person(String firstName, String lastName) {
+    public Person(int pesel, String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.pesel = pesel;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public int getPesel() {
+        return pesel;
     }
 
     @Override
@@ -32,17 +30,17 @@ public class Person {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
-        return Objects.equals(getFirstName(), person.getFirstName()) &&
-                Objects.equals(getLastName(), person.getLastName());
+        return Objects.equals(getFirstName(), person.getFirstName()) && Objects.equals(getLastName(),
+                person.getLastName()) && Objects.equals(getPesel(), person.getPesel());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getFirstName(), getLastName());
+        return Objects.hash(getFirstName(), getLastName(), getPesel());
     }
 
     @Override
     public String toString() {
-        return firstName + " " + lastName;
+        return "Pesel:" + pesel + "; " + firstName + " " + lastName;
     }
 }

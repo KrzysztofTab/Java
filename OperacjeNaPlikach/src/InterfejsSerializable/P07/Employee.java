@@ -2,41 +2,29 @@ package InterfejsSerializable.P07;
 
 import java.util.Objects;
 
-public class Employee extends Person implements Comparable<Employee>{
-    private String position;
-    private int yearOfEmployment;
-    private double salary;
+public class Employee extends Person implements Comparable<Employee> {
+    private final String position;
+    private final int yearOfEmployment;
+    private final double salary;
 
-
-    public Employee(String firstName, String lastName, String position, int yearOfEmployment, double salary) {
-        super(firstName, lastName);
+    public Employee(int pesel, String firstName, String lastName, String position,
+                    int yearOfEmployment, double salary) {
+        super(pesel, firstName, lastName);
+        this.salary= salary;
         this.position = position;
         this.yearOfEmployment = yearOfEmployment;
-        this.salary = salary;
     }
 
     public String getPosition() {
         return position;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
     public int getYearOfEmployment() {
         return yearOfEmployment;
     }
 
-    public void setYearOfEmployment(int yearOfEmployment) {
-        this.yearOfEmployment = yearOfEmployment;
-    }
-
     public double getSalary() {
         return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 
     @Override
@@ -61,6 +49,6 @@ public class Employee extends Person implements Comparable<Employee>{
 
     @Override
     public int compareTo(Employee e) {
-        return Integer.compare(this.yearOfEmployment,e.yearOfEmployment);
+        return Integer.compare(this.getPesel(), e.getPesel());
     }
 }
