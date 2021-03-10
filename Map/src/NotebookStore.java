@@ -13,7 +13,7 @@ public class NotebookStore {
         notebooks.put("G2A33EA", new Notebook("HP", "G2A33EA"));
         notebooks.put("XPS0091V", new Notebook("Dell", "XPS0091V"));
 
-//        wyświetlamy zbiór kluczy
+//        wyświetlamy zbiór kluczy0
         System.out.println();
         System.out.println("wyświetlamy zbiór kluczy: ");
 //        Metoda keySet() zwraca zbiór kluczy.
