@@ -28,10 +28,8 @@ public class CompanyApp {
         } else if (option == READ_FROM_FILE) {
 
             try {
-
                 Company company = readFile();
                 System.out.println(company);
-
             } catch (IOException | ClassNotFoundException e) {
                 System.err.println("Błąd odczytu danych");
             }

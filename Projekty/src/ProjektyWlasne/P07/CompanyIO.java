@@ -1,4 +1,4 @@
-package InterfejsSerializable.P07;
+package ProjektyWlasne.P07;
 
 import java.io.*;
 import java.util.*;
