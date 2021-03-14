@@ -32,7 +32,7 @@ public class CompanyMenu {
                     findEmployee(company);
                     break;
                 case PRINT_EMPLOYEES:
-
+                    printEmployees(company);
                     break;
                 case EXIT:
                     System.err.println("! Konic !");
@@ -40,7 +40,7 @@ public class CompanyMenu {
         } while (userOption != EXIT);
     }
 
-
+    //    wyszukiwanie pracownika
     private static void findEmployee(Company company) {
         System.out.println("Podaj imię:");
         String firstName = sc.nextLine();
@@ -53,6 +53,8 @@ public class CompanyMenu {
             System.out.println(employee);
     }
 
+
+    //    dodawanie pracownika
     private static Employee readAndCreateEmployee() {
         System.out.println("Podaj imię:");
         String firstName = sc.nextLine();
@@ -62,6 +64,13 @@ public class CompanyMenu {
         double salary = sc.nextDouble();
         sc.nextLine();
         return new Employee(firstName, lastName, salary);
+    }
+
+   private void printEmployees(Company company) {
+       Set<Map.Entry<String, Employee>> entries = company.employees.entrySet();
+       for (Map.Entry<String, Employee> entry : entries){
+           System.out.println(entry.getValue());
+       }
     }
 
     private static void printOptions() {
