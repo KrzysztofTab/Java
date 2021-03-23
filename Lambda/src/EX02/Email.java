@@ -55,6 +55,11 @@ public class Email {
         this.sent = sent;
     }
 
+    // metody pomocnicza sprawdza dwa argument nadawcy i odbiorcy z godnie zp odanym argumentem "email"
+    boolean isSenderOrRecipient(String email){
+        return sender.equals(email) || recipient.equals(email);
+    }
+
     @Override
     public String toString() {
         return "Email{" +

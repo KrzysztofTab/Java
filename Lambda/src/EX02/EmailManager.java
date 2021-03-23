@@ -14,28 +14,23 @@ public class EmailManager {
                 "Siema! Musimy omówić temat nowej inwestycji, pasuje Ci jutro?", true));
         emails.add(new Email("joe@example.com", "bart@example.com", "Wypad na miasto",
                 "Cześć. Idziemy dzisiaj wieczorem z chłopakami na miasto. Dołączasz do nas?", true));
-
+        emails.add(new Email("barbara@example.com", "carl@example.com", "Nowa inwestycja",
+                "Siema! Musimy omówić temat nowej inwestycji, pasuje Ci jutro?", false));
         createEmailList(emails, System.out::println); // (emails, email -> System.out.println(email))
-        //tylko wysłane emaile
+
+        //  tylko wysłane emaile
         System.out.println("\nWysłane maile:");
-        List<Email> sentEmails = filterEmailsSent(emails, Email::isSent); // (emails, email -> email.isSent())
+        List<Email> sentEmails = filterEmails(emails, Email::isSent); // (emails, email -> email.isSent())
+        createEmailList(sentEmails, System.out::println);
 
-//        //filtrowanie maili, w których nadawca lub odbiorca ma wskazany adres email
-//        List<Email> bartEmails = filterEmailsBySenderOrRecipient(emailList, "bart@example.com");
-//        System.out.println("Maile przefiltrowane na podstawie nadawcy lub odbiorcy");
-//        System.out.println(bartEmails);
-    }
+        //  filtrowanie maili, w których nadawca lub odbiorca ma wskazany adres email
+        System.out.println("\nMaile przefiltrowane na podstawie nadawcy lub odbiorcy");
+        //  metoda pomocnicza "isSenderOrRecipient()" stworzona w klasie Emails
+        List<Email> bartEmails = filterEmails(emails, email -> email.isSenderOrRecipient("carl@example.com"));
+        createEmailList(bartEmails, System.out::println);
+           }
 
-    private static List<Email> filterEmailsBySenderOrRecipient(List<Email> emails, String emailAddress) {
-        List<Email> filteredEmails = new ArrayList<>();
-        for (Email email : emails) {
-            if (email.getSender().equals(emailAddress) || email.getRecipient().equals(emailAddress))
-                filteredEmails.add(email);
-        }
-        return filteredEmails;
-    }
-
-    private static <T> List<T> filterEmailsSent(List<T> list, Predicate<T> predicate) {
+    private static <T> List<T> filterEmails(List<T> list, Predicate<T> predicate) {
         List<T> result = new ArrayList<>();
         for (T t : list) {
             if (predicate.test(t))
