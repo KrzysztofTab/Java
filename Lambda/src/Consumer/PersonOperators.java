@@ -22,6 +22,7 @@ public class PersonOperators {
         consumeList(people, p -> p.setAge(p.getAge() - 1));
 //        consumeList(people, p -> System.out.println(p));
         consumeList(people, System.out::println); // to samo co wiersz wyżej
+        System.out.println("\n>>> People - tylko nazwiska");
         consumeList(people, p -> System.out.println(p.getLastName())); //wyświetlenia samych nazwisk
     }
 

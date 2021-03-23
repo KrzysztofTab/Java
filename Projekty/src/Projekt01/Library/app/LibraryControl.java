@@ -11,7 +11,6 @@ import Projekt01.Library.io.file.FileManagerBuilder;
 import Projekt01.Library.model.*;
 import Projekt01.Library.model.comparator.AlphabeticalTitleComparator;
 
-import java.util.Comparator;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
@@ -20,7 +19,7 @@ public class LibraryControl {
     //    zmienna do komunikacji z użytkownikiem
     private final DataReader dataReader = new DataReader(printer);
     //    "biblioteka" przechowująca dane
-    private FileManager fileManager;
+    private final FileManager fileManager;
     private Library library;
 
     LibraryControl() {
@@ -187,12 +186,7 @@ public class LibraryControl {
     }
 
     private void printUsers() {
-        printer.printUsers(library.getSortedUsers(new Comparator<LibraryUser>() {
-            @Override
-            public int compare(LibraryUser p1, LibraryUser p2) {
-                return p1.getLastName().compareToIgnoreCase(p2.getLastName());
-            }
-        }));
+        printer.printUsers(library.getSortedUsers((p1, p2) -> p1.getLastName().compareToIgnoreCase(p2.getLastName())));
     }
 
     private void exit() {
