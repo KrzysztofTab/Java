@@ -9,8 +9,8 @@ import Projekt01.Library.io.DataReader;
 import Projekt01.Library.io.file.FileManager;
 import Projekt01.Library.io.file.FileManagerBuilder;
 import Projekt01.Library.model.*;
-import Projekt01.Library.model.comparator.AlphabeticalTitleComparator;
 
+import java.util.Comparator;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
@@ -63,9 +63,8 @@ public class LibraryControl {
         PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów / gazet"),
         DELETE_BOOK(5, "Usuń książkę"),
         DELETE_MAGAZINE(6, "Usuń magazyn"),
-        ADD_USER(7,"Dodaj czytelnika"),
-        PRINT_USERS(8,"Wyświetl czytelnika");
-
+        ADD_USER(7, "Dodaj czytelnika"),
+        PRINT_USERS(8, "Wyświetl czytelnika");
 
         private final int value;
         private final String desciption;
@@ -73,14 +72,6 @@ public class LibraryControl {
         Option(int value, String desc) {
             this.value = value;
             this.desciption = desc;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-        public String getDesciption() {
-            return desciption;
         }
 
         @Override
@@ -146,7 +137,8 @@ public class LibraryControl {
     }
 
     private void printBooks() {
-        printer.printBooks(library.getSortedPublications(new AlphabeticalTitleComparator()));
+        printer.printBooks(library.getSortedPublications(
+                Comparator.comparing(Publication::getTitle, String.CASE_INSENSITIVE_ORDER)));
     }
 
     private void addMagazine() {
@@ -173,7 +165,8 @@ public class LibraryControl {
     }
 
     private void printMagazines() {
-        printer.printMagazines(library.getSortedPublications(new AlphabeticalTitleComparator()));
+        printer.printMagazines(library.getSortedPublications(
+                Comparator.comparing(Publication::getTitle, String.CASE_INSENSITIVE_ORDER)));
     }
 
     private void addUser() {
@@ -186,7 +179,8 @@ public class LibraryControl {
     }
 
     private void printUsers() {
-        printer.printUsers(library.getSortedUsers((p1, p2) -> p1.getLastName().compareToIgnoreCase(p2.getLastName())));
+        printer.printUsers(library.getSortedUsers(
+                Comparator.comparing(User::getLastName, String.CASE_INSENSITIVE_ORDER)));
     }
 
     private void exit() {
@@ -199,6 +193,4 @@ public class LibraryControl {
         dataReader.close();
         System.err.println("\nKoniec programu!");
     }
-
 }
-
