@@ -19,7 +19,7 @@ public class StreamPeek {
 //        czyli np. równie dobrze mogłaby ona być wywołana po metodzie map().
                 .peek(course -> System.out.println("filtered stream: " + course))
 //                .map(course -> course.getName())
-                .map(Course::getName)                   // wyciąga ze steumienia wszystkie poszikiwane wyrazenia
+                .map(Course::getName)                   // wyciąga z zestawienia wszystkie poszukiwane wyrazenia
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
     }

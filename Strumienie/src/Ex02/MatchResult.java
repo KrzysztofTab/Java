@@ -1,5 +1,7 @@
 package Ex02;
 
+import java.util.Locale;
+
 public class MatchResult {
     private final String homeTeam;
     private final String awayTeam;
@@ -29,8 +31,27 @@ public class MatchResult {
         return resultAwayTeam;
     }
 
+    // dodana metoda
+    int getGoalDifference() {
+        return resultHomeTeam - resultAwayTeam;
+    }
+
+    // dodana metoda
+    boolean containsTeam(String contry) {
+        return homeTeam.toLowerCase(Locale.ROOT).equals(contry) || awayTeam.toLowerCase(Locale.ROOT).equals(contry);
+    }
+
+    // dodana metoda
+    String[] getTeamNames() {
+        return new String[]{homeTeam, awayTeam};
+    }
+
+    // dodana metoda
+    int getGolsSum(){
+        return resultHomeTeam + resultAwayTeam;
+    }
     @Override
     public String toString() {
-        return "'" +homeTeam  + " - " + awayTeam + " ( " + resultHomeTeam + " : " + resultAwayTeam + " )'";
+        return "'" + homeTeam + " - " + awayTeam + " ( " + resultHomeTeam + " : " + resultAwayTeam + " )'";
     }
 }
