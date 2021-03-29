@@ -7,7 +7,6 @@ import Projekt01.Library.model.*;
 
 import java.io.*;
 import java.util.Collection;
-import java.util.Scanner;
 
 public class CsvFileManager implements FileManager {
     //    tworzy plik csv z danymi kiążek i magazynów
@@ -23,14 +22,22 @@ public class CsvFileManager implements FileManager {
     }
 
     private void importUsers(Library library) {
-        try (Scanner fileReader = new Scanner(new File(USERS_FILE_NAME))) {
-            while (fileReader.hasNextLine()) {
-                String line = fileReader.nextLine();
-                LibraryUser libUser = createUserFromString(line);
-                library.addUser(libUser);
-            }
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(USERS_FILE_NAME))) {
+            bufferedReader.lines()
+                    .map(this::createUserFromString)
+                    .forEach(library::addUser);
+
+            // pętla scannera zastapiona strumieniem powyrzej
+//            try (Scanner fileReader = new Scanner(new File(USERS_FILE_NAME))) {
+//            while (fileReader.hasNextLine()) {
+//                String line = fileReader.nextLine();
+//                LibraryUser libUser = createUserFromString(line);
+//                library.addUser(libUser);
+//            }
         } catch (FileNotFoundException e) {
             throw new DataImportException("Brak pliku " + USERS_FILE_NAME);
+        } catch (IOException e) {
+            throw new DataImportException("Błąd odczytu pliku " + USERS_FILE_NAME);
         }
     }
 
@@ -43,14 +50,22 @@ public class CsvFileManager implements FileManager {
     }
 
     private void importPublications(Library library) {
-        try (Scanner fileReader = new Scanner(new File(PUBLICATIONS_FILE_NAME))) {
-            while (fileReader.hasNextLine()) {
-                String line = fileReader.nextLine();
-                Publication publication = createObjectFromString(line);
-                library.addPublication(publication);
-            }
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(PUBLICATIONS_FILE_NAME))) {
+            bufferedReader.lines()
+                    .map(this::createObjectFromString)
+                    .forEach(library::addPublication);
+
+            // pętla scannera zastapiona strumieniem powyrzej
+//            try (Scanner fileReader = new Scanner(new File(PUBLICATIONS_FILE_NAME))) {
+//            while (fileReader.hasNextLine()) {
+//                String line = fileReader.nextLine();
+//                Publication publication = createObjectFromString(line);
+//                library.addPublication(publication);
+//            }
         } catch (FileNotFoundException e) {
             throw new DataImportException("Brak pliku " + PUBLICATIONS_FILE_NAME);
+        } catch (IOException e) {
+            throw new DataImportException("Bład odczytu pliku " + PUBLICATIONS_FILE_NAME);
         }
     }
 
@@ -70,7 +85,7 @@ public class CsvFileManager implements FileManager {
         exportToCsv(users, USERS_FILE_NAME);
     }
 
-//    Zapis <T extends CsvConvertible> oznacza, że jako jej argument można przekazać dowolną kolekcję
+    //    Zapis <T extends CsvConvertible> oznacza, że jako jej argument można przekazać dowolną kolekcję
 //    typu CsvConvertible lub dowolnego typu implementującego ten interfejs. Takie rozwiązanie gwarantuje nam to,
 //    że na dowolnym obiekcie tej kolekcji możemy wywołać metodę toCsv().
 //    Sama logika zapisu do pliku pozostaje niezmieniona.
