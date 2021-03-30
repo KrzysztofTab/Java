@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamCollect {
+public class StreamCollect_00 {
     public static void main(String[] args) {
         Stream<Course> courses = Stream.of(
                 new Course(1L, "Java", 199, "Programowanie"),
