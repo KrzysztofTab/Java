@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2006dd02-b83a-47fc-8b37-7254360cbbc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rekurencja.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DirectoryLister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex01/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex01/CartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex01/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NumberAdder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NumberAdder01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NumbersAdderRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OddTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/TypyGeneryczne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/ClassyGeneryczne/ContainerNEW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/ClassyGeneryczne/ContainerOLD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/ClassyGeneryczne/GenericTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/MetodyGeneryczne/GenericMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/PairTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyGeneryczne/src/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/Numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/TypyOpakowujace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/src/BigDesimals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/src/BigNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/src/Ex01/Example01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/src/Ex01/Example02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypyOpakowujace/src/WrapperTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryControl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryControl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryControl$Option.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryControl$Option.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/app/LibraryControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/DataExportException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/DataExportException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/DataImportException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/DataImportException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/InvalidDataException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/InvalidDataException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/NoSuchFileTypeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/NoSuchFileTypeException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/NoSuchOptionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/NoSuchOptionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/PublicationAlreadyExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/PublicationAlreadyExistsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/UserAlreadyExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/exception/UserAlreadyExistsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/ConsolePrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/ConsolePrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/DataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/DataReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/CsvFileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/CsvFileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileManagerBuilder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileManagerBuilder$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileManagerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileManagerBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/FileType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/SerializableFileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/io/file/SerializableFileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/CsvConvertible.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/CsvConvertible.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/LibraryUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/LibraryUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Magazine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Magazine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Publication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/Publication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/comparator/AlphabeticalTitleComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt01/Library/model/comparator/AlphabeticalTitleComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt02/MiniMiniMuzaAplk.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt02/MiniMiniMuzaAplk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt02/MiniMuzaAplkWrsPlc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt02/MiniMuzaAplkWrsPlc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/BottonFrame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/BottonFrame/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/BottonFrame/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/BottonFrame/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/ActionFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/ActionFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/ButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/FrameTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/FrameTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/FrameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsColor/FrameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsFrame/FrameTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsFrame/FrameTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsFrame/FrameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsFrame/FrameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsFrame/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/ButtonsFrame/MyFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro01/CelsiusToFarenheit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro01/CelsiusToFarenheit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro01/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro01/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro02/CelsiusToFarenheit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro02/CelsiusToFarenheit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro02/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro02/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro03/CelsiusToFarenheit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro03/CelsiusToFarenheit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro03/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/CheckBox/Pro03/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/GraphicEquation/Graphic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/GraphicEquation/Graphic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/GraphicEquation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/GraphicEquation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/GraphicEquation/SquareEquation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/GraphicEquation/SquareEquation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Menu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Menu/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Password/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Password/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Password/Password.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Password/Password.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Slider/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Slider/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Slider/Slider.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Slider/Slider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Window/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Window/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Window/WindowDialog$PanelPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Window/WindowDialog$PanelPassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Window/WindowDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/Projekt03/Window/WindowDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Ex01/Lotto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Ex01/Lotto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Ex01/LottoGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Ex01/LottoGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Ex01/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Ex01/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Example02/HashMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Example02/HashMapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Example02/Notebook.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Example02/Notebook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Example02/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/Example02/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/CompanyApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/CompanyApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/CompanyIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/CompanyIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/out/production/Projekty/ProjektyWlasne/P07/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projekty/src/Projekt01/Library/io/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekty/src/Projekt01/Library/io/ConsolePrinter.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qfa04SI9KQfVyogT7zAlJhA5X7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.CartTest">
+    <configuration name="CartTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex01.CartTest" />
+      <module name="Rekurencja" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DirectoryLister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DirectoryLister" />
+      <module name="Rekurencja" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Factorial" />
+      <module name="Rekurencja" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumbersAdderRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumbersAdderRecursion" />
+      <module name="Rekurencja" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OddTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OddTester" />
+      <module name="Rekurencja" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CartTest" />
+        <item itemvalue="Application.Factorial" />
+        <item itemvalue="Application.OddTester" />
+        <item itemvalue="Application.DirectoryLister" />
+        <item itemvalue="Application.NumbersAdderRecursion" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2006dd02-b83a-47fc-8b37-7254360cbbc3" name="Default Changelist" comment="" />
+      <created>1617472872895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617472872895</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
