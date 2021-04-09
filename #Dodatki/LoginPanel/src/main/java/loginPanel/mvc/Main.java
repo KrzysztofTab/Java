@@ -1,9 +1,9 @@
-package kt.java.mp3player.main;
+package loginPanel.mvc;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -15,10 +15,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Pane mainPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/mainPane.fxml")));
+        AnchorPane mainPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/mainPane.fxml")));
         Scene scene = new Scene(mainPane);
         stage.setScene(scene);
-        stage.setTitle("Mp3 Player");
         stage.show();
     }
 }
