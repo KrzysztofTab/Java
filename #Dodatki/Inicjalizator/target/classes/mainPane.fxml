@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="134.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inicjalizator.mvc.LoginController">
+    <children>
+        <VBox>
+            <children>
+                <Label fx:id="etykietaLabel1" prefHeight="29.0" prefWidth="78.0" text="Etykieta 1" />
+                <Button fx:id="przyciskButton1" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Przycisk 1" />
+                <Label fx:id="etykietaLabel2" prefHeight="33.0" prefWidth="75.0" text="Etykieta 2" />
+                <Button fx:id="przyciskButton2" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="P{rzycisk 2" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
