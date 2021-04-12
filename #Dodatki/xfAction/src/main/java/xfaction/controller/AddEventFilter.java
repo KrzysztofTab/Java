@@ -27,9 +27,9 @@ public class AddEventFilter {
         // możemy tutaj obsługiwać nie tylko zdarzenia typu ActionEvent, ale równie dobrze może to być zdarzenie
         // typu MouseEvent, czyli zdarzenie związane z myszą, albo KeyEvent związane z klawiaturą. Dodajmy obsługę
         // zdarzenia, które będzie wywołane przy każdorazowym wciśnięciu klawiszy w TextArea.
-        mainTextArea.addEventFilter(KeyEvent.KEY_TYPED, keyEvent -> {
-            System.out.println("Wcisnięto " + keyEvent.getCharacter());
-        });
+        mainTextArea.addEventFilter(KeyEvent.KEY_TYPED, keyEvent ->
+            System.out.println("Wcisnięto " + keyEvent.getCharacter())
+        );
         //Zdarzenie Key_TYPED jest generowane, gdy ktoś wciśnie i zwolni dowolny klawisz na klawiaturze.
         // Działanie programu jest niemal identyczne jak poprzednio, jednak teraz po każdym wciśnięciu klawisza
         // zobaczymy dodatkowy log w konsoli. Z obiektu keyEvent możemy odczytać znak wciśniętego klawisza.

@@ -54,7 +54,7 @@
                 <Button fx:id="preiousButton" mnemonicParsing="false" text="Button"/>
                 <ToggleButton fx:id="playButton" mnemonicParsing="false" text="ToggleButton"/>
                 <Button fx:id="nextButton" mnemonicParsing="false" text="Button"/>
-                <Slider fx:id="columeSlider"/>
+                <Slider fx:id="volumeSlider"/>
                 <Slider fx:id="progressSlider"/>
             </children>
         </HBox>

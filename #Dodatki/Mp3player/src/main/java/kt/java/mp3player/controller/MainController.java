@@ -10,42 +10,62 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TableView;
 import javafx.scene.control.ToggleButton;
+import javafx.scene.input.MouseEvent;
 
 public class MainController {
 
-    @FXML // fx:id="fileMenuItem"
-    private MenuItem fileMenuItem; // Value injected by FXMLLoader
+    @FXML
+    private MenuItem fileMenuItem;
 
-    @FXML // fx:id="dirMenuitem"
-    private MenuItem dirMenuitem; // Value injected by FXMLLoader
+    @FXML
+    private MenuItem dirMenuitem;
 
-    @FXML // fx:id="closeMaenuItem"
-    private MenuItem closeMaenuItem; // Value injected by FXMLLoader
+    @FXML
+    private MenuItem closeMaenuItem;
 
-    @FXML // fx:id="aboutMenuItem"
-    private MenuItem aboutMenuItem; // Value injected by FXMLLoader
+    @FXML
+    private MenuItem aboutMenuItem;
 
-    @FXML // fx:id="contentTable"
-    private TableView<?> contentTable; // Value injected by FXMLLoader
+    @FXML
+    private TableView<?> contentTable;
 
-    @FXML // fx:id="preiousButton"
-    private Button preiousButton; // Value injected by FXMLLoader
+    @FXML
+    private Button preiousButton;
 
-    @FXML // fx:id="playButton"
-    private ToggleButton playButton; // Value injected by FXMLLoader
+    @FXML
+    private ToggleButton playButton;
 
-    @FXML // fx:id="nextButton"
-    private Button nextButton; // Value injected by FXMLLoader
+    @FXML
+    private Button nextButton;
 
-    @FXML // fx:id="columeSlider"
-    private Slider columeSlider; // Value injected by FXMLLoader
+    @FXML
+    private Slider volumeSlider;
 
-    @FXML // fx:id="progressSlider"
-    private Slider progressSlider; // Value injected by FXMLLoader
-
+    @FXML
+    private Slider progressSlider;
     public void initialize(){
-        System.out.println("MainController created");
+        configureButtons();
+        configureVolume();
     }
+
+    private void configureVolume() {
+        volumeSlider.addEventFilter(MouseEvent.MOUSE_PRESSED, event ->
+                System.out.println("Wciśnięto przycisk na suwaku głośności")
+        );
+    }
+
+    private void configureButtons() {
+        preiousButton.setOnAction(event-> System.out.println("Poprzednia piosenka"));
+        nextButton.setOnAction(x-> System.out.println("Następna piosenka"));
+        playButton.setOnAction(event->{
+            if(playButton.isSelected()){
+                System.out.println("Play");
+            }else {
+                System.out.println("Stop");
+            }
+        });
+    }
+
 
 }
 

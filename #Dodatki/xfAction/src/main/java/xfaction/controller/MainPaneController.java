@@ -27,9 +27,9 @@ public class MainPaneController {
             // zawartość do zmiennej originalText za pomocą metody getText() klasy TextArea.
             // Dalej musimy ustawić ten sam tekst, ale przerobiony na małe litery.
             // W tym celu zamieniamy tekst przy pomocy metody toLowerCase() i ustawiamy go wywołując metodę setText().
-            String orginalText = mainTextArea.getText();
-            String lowerText = orginalText.toLowerCase();
-            mainTextArea.setText(lowerText);
+            String orginalText = mainTextArea.getText();  // pobieramy orginalny tekst
+            String lowerText = orginalText.toLowerCase(); // metoda toLowerCase zwraca nowy obiekt zapisany małymi literami
+            mainTextArea.setText(lowerText);  // ustawiamy nowy teks zamieniony na małe litery
         });
     }
 
