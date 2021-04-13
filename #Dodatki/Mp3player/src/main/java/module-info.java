@@ -3,6 +3,6 @@ module Mp3player {
     requires javafx.controls;
     requires javafx.fxml;
 
-    exports kt.java.mp3player.main to javafx.graphics;
-    opens kt.java.mp3player.controller to javafx.fxml;
+    exports mp3player.main to javafx.graphics;
+    opens mp3player.controller to javafx.fxml;
 }
