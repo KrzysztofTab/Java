@@ -5,40 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a99d19f0-c5ff-493f-9f85-c27e471806aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xfaction/controller/MainPaneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xfaction/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mainPane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/xfaction/controller/MainPaneController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/xfaction/main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfActionKeybord.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/src/main/java/xfaction/controller/MainPaneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/src/main/java/xfaction/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/src/main/resources/mainPane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/target/classes/mainPane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/target/classes/module-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/target/classes/xfaction/controller/MainPaneController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/target/classes/xfaction/main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xfActionMouse/xfActionMouse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xfAction/src/main/java/xfaction/controller/AddEventFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xfAction/src/main/java/xfaction/controller/AddEventFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xfAction/src/main/java/xfaction/controller/MainPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xfAction/src/main/java/xfaction/controller/MainPaneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xfAction/src/main/resources/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../xfAction/src/main/resources/fxml/mainPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xfAction/target/classes/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../xfAction/target/classes/fxml/mainPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xfAction/target/classes/xfaction/controller/AddEventFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xfAction/target/classes/xfaction/controller/AddEventFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/ExampleFxAction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExampleFxAction/src/main/resources/mainPane.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xfAction" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,6 +95,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
