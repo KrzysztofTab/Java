@@ -3,9 +3,10 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <fx:include source="contentPane.fxml" />
-      <fx:include source="controlPane.fxml" />
-   </children>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fxmodules.controller.MainController">
+    <children>
+        <fx:include fx:id="contentPane" source="contentPane.fxml" />
+        <fx:include fx:id="controlPane" source="controlPane.fxml" />
+    </children>
 </VBox>
