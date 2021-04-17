@@ -25,20 +25,20 @@ public class ControlPaneController {
     public void initialize() {
         System.out.println("Control controller created");
         configureButtons();
-        configureVolume();
+        configureSlider();
     }
 
-    private void configureVolume() {
-        volumeSlider.addEventFilter(MouseEvent.MOUSE_PRESSED, event ->
-                System.out.println("Wciśnięto przycisk na suwaku głośności")
-        );
+    private void configureSlider() {
+        volumeSlider.valueProperty().addListener((observable, oldValue, newValue) ->
+                System.out.println("Zmianan dłośności" + newValue.doubleValue()));
+        progressSlider.valueProperty().addListener(x-> System.out.println("Przesuniecie piosenki"));
     }
 
     private void configureButtons() {
         previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka"));
         nextButton.setOnAction(x -> System.out.println("Następna piosenka"));
         playButton.setOnAction(event -> {
-            if(playButton.isSelected()) {
+            if (playButton.isSelected()) {
                 System.out.println("Play");
             } else {
                 System.out.println("Stop");

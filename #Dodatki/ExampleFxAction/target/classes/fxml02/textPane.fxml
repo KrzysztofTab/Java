@@ -3,12 +3,11 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="fxAction02.controller.TextPaneController">
+<HBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <TextArea fx:id="originalTextArea" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
+        <TextArea fx:id="inputTextArea1" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
                   maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="300.0" HBox.hgrow="ALWAYS"/>
-        <TextArea fx:id="invertedTextArea" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
+        <TextArea fx:id="inputTextArea11" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
                   maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="300.0" HBox.hgrow="ALWAYS"/>
     </children>
 </HBox>

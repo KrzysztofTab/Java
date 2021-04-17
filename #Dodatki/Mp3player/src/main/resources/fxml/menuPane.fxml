@@ -9,7 +9,7 @@
 <AnchorPane xmlns="http://javafx.com/javafx/16 "
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="mp3player.controller.MenuPaneController">
-    <MenuBar>
+    <MenuBar AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
         <Menu mnemonicParsing="false" text="File">
             <MenuItem fx:id="fileMenuItem" mnemonicParsing="false" text="Open Mp3 Filw"/>
             <MenuItem fx:id="dirMenuItem" mnemonicParsing="false" text="Open directory"/>
