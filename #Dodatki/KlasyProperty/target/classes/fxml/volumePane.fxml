@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="70.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxproperties.controller.VolumeController">
+    <children>
+        <Slider fx:id="volumeSlider" minHeight="-Infinity" minWidth="-Infinity" showTickLabels="true" snapToTicks="true" />
+        <HBox>
+            <children>
+                <Label text="Głośność  " />
+                <Label fx:id="volumeLevelLabel" text=" 0" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
