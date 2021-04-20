@@ -98,6 +98,7 @@ public class CompanyIO{
         }
     }
 
+    // zapisywanie pracowników
     public void saveRecord(Map<Integer, TreeSet<Employee>> employeesMap) {
         try (
                 var fileWriter = new FileWriter(FILE_NAME);
